@@ -26,8 +26,11 @@ If you want to make a new page just create a file in the pages directory and giv
 
 Most everything works the same as with vanilla JS and and html but some things are a little different. I have made comments in the code but here's a little bit:
 
+- All pages and components must have ONE root element inside the <template>
 - Use @click="" instead of onclick="" 
 - Instead of <a> use <NuxtLink> to make it super fast and cool
+- When using AI to write code be sure to specify you are using Vue 3 with composition API and script setup syntax
+- There are two and a half ways of writing Vue code. Originally it was "options api" and then "composition api" which was better but had to be wrapped in a setup function. and finally now you just add setup as an attribute in your script tag.
 - Get used to using arrow functions, as it's really handy to have functions exist as a const when calling them from the DOM
 
 ```js
